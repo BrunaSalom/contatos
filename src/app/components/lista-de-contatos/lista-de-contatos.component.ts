@@ -12,19 +12,19 @@ export class ListaDeContatosComponent implements OnInit {
     {
       nome: "Bruna",
       email: "bruna@teste.com",
-      telefones: ["9999-9999"]
+      telefones: ["9999-9999", "8888-9999"]
     }, {
       nome: "Renan",
       email: "renan@teste.com",
-      telefones: ["9999-8888"]
+      telefones: ["9999-8888", "8888-8888"]
     }, {
       nome: "Tata",
       email: "tata@teste.com",
-      telefones: ["9999-7777"]
+      telefones: ["9999-7777", "8888-7777"]
     }, {
       nome: "Gilson",
       email: "gilson@teste.com",
-      telefones: ["9999-6666"]
+      telefones: ["9999-6666", "8888-6666"]
     }, {
       nome: "Shena",
       email: "shena@teste.com",
