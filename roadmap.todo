@@ -33,13 +33,13 @@ Criação de Lista de Contatos:
 
 Criação de Componente contato:
     ✔ Criar componente components/Contato @done(21-08-30 11:01)
-    ☐ Utilizar como componente com componente uma das sections contidas na main do lista-de-contatos.component.html
-    ☐ Utilizar o css apropriado para esse componente.
-    ☐ Reescrever o html do componente lista de contatos para exibir uma ou duas dezenas de app-contato
+    ✔ Utilizar como componente uma das sections contidas na main do lista-de-contatos.component.html @done(21-08-30 11:10)
+    ✔ Utilizar o css apropriado para esse componente. @done(21-08-30 11:12)
+    ✔ Reescrever o html do componente lista de contatos para exibir uma ou duas dezenas de app-contato @done(21-08-30 11:15)
 
 Fazendo que os contatos sejam mais dinâmicos:
-    ☐ Crie uma pasta model dentro da pastas src/app
-    ☐ Crie nessa pasta models um arquivo Contato.ts
+    ✔ Crie uma pasta models dentro da pastas src/app @done(21-08-30 11:20)
+    ✔ Crie nessa pasta models um arquivo Contato.ts @done(21-08-30 11:20)
     Exporte de dentro desse arquivo uma interface que defina 3 campos
     .nome (do tipo string),
     .email (do tipo string) 
