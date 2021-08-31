@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contatos';
+  mostrandoModal = false;
+
+  abrir(){
+    console.log("Te escutei e abri");
+    this.mostrandoModal = true;
+  }
+
+  fechar(){
+    console.log("Te escutei e fechei");
+    this.mostrandoModal = false;
+  }
+
 }
