@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contatos';
-  mostrandoModal = false;
+  mostrandoModal = true;
 
   abrir(){
     console.log("Te escutei e abri");
