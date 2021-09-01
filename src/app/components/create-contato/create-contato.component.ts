@@ -2,6 +2,7 @@ import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { Contato } from 'src/app/models/Contato';
+import { ContatoService } from 'src/app/services/contato.service';
 
 @Component({
   selector: 'app-create-contato',
@@ -15,8 +16,10 @@ export class CreateContatoComponent implements OnInit {
   novoContato:Contato = {
     nome: "",
     email: "",
-    telefones: ["", ""],
+    telefones: [""],
   }
+
+  cs:ContatoService = new ContatoService();
 
   constructor() { }
 
@@ -32,4 +35,19 @@ export class CreateContatoComponent implements OnInit {
     return index;
   }
 
+  addTelefone():void{
+    this.novoContato.telefones.push("")
+  }
+
+  removeTelefone(i:number):void{
+    this.novoContato.telefones.splice(i,1)
+  }
+
+  salvar(){
+    console.log("salvando...");
+    this.cs.addContato(this.novoContato);
+    this.onCancelClick.emit();
+    // se quiser apenas limpar para mais um contato:
+    // this.novoContato = {nome:"", email:"", telefones:[""]}
+  }
 }

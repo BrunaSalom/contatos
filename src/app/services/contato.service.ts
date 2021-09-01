@@ -5,7 +5,7 @@ const BASE_DE_CONTATOS:Contato[] = [
   {
     nome: "Bruna",
     email: "bruna@teste.com",
-    telefones: ["9999-9999", "8888-9999"]
+    telefones: ["9999-9999"]
   }, {
     nome: "Renan",
     email: "renan@teste.com",
@@ -60,8 +60,8 @@ export class ContatoService {
     BASE_DE_CONTATOS.push(contato)
   }
 
-  removerContato(contato:Contato) {
-    BASE_DE_CONTATOS.splice(1, 1)
-  }
+  // removerContato(contato:Contato) {
+  //   BASE_DE_CONTATOS.splice(1, 1)
+  // }
 
 }
